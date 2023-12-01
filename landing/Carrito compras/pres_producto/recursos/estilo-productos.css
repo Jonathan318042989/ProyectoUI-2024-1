@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap');
+
+body{
+    background-color: #E8E9EB !important;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+.busqueda{
+    margin-left: -100px !important; /* Establece un margen izquierdo negativo para mover el elemento hacia la izquierda */
+    width: 400px !important;
+    border: 2px solid #FA3C42 !important;
+    background-color: #D9D9D9 !important;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+@media (max-width: 992px) {
+    .busqueda {
+        width: 200px !important;
+        font-size: 0px !important;
+        margin-left: auto !important;
+    }
+  }
+
+.busqueda:hover{
+    background-color: #ffffff !important;
+}
+
+.boton_buscar{
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+
+.mi-boton-custom {
+    background-color: #70A7B6 !important; /* Fondo blanco */
+    border: 2px solid #ffffff !important; /* Borde sólido */
+    color: #ffffff !important; /* Color del texto */
+    width: 120px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 17px !important;
+
+}
+
+
+.mi-boton-custom:hover{
+    transform: scale(1.1) !important; /* Escala el botón en hover */
+    background-color: #3b6e7d !important;
+    border: 3px solid #ffffff !important; /* Borde sólido */
+
+}
+
+.carrito:hover{
+    transform: scale(1.1) !important; /* Escala el botón en hover */
+}
+@media (max-width: 992px) {
+    .carrito {
+        margin-left: 200px !important;
+    }
+  }
+
+
+/* Barrita de categorias */
+
+.categorias{
+    height: 28px !important;
+    font-size: 15px !important;
+}
+
+.name_cat{
+    color: beige !important;
+    padding: 2px !important;
+    margin-top: 1px !important;
+    margin-left: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.name_cat:hover{
+    /*transform: translateY(-3px) !important;*/
+    color:beige!important;
+    background-color: #ba4c4f !important;
+    border-radius: 10px !important;
+
+
+}
+
+
+/**Caja de item**/
+.producto
+{
+    /*border: black solid 2px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    align-self: center;
+
+    margin: 25px;
+    padding: 15px;
+    min-width: min-content;
+
+    background-color: var(--color-gris-claro);
+    box-shadow: 3px 3px 2px lightgray;
+}
+
+.imagen-prod
+{
+    /*border: black solid 2px;*/
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.info-producto
+{
+    /*border: black solid 2px;*/
+    margin: 15px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.precio-compra
+{
+    display: flex;
+    flex-direction: row ;
+    justify-content: flex-end;
+}
+
+/**Barra de puntaje*/
+.rating
+{
+    user-select: none;
+}
+.star-rating
+{
+    font-size: xx-large;
+    color: var(--color-gris);
+    text-shadow: 1px 1px 1px gray;
+}
+.star-puntuacion
+{
+    color: var(--color-gris);
+    font-size: large;
+}
+
+/**reseña*/
+#reseñas-container
+{
+    width: 60%;
+    align-self: center;
+}
+.reseña
+{
+    background-color: var(--color-gris-claro);
+    box-shadow: 2px 2px 2px var(--color-gris);
+    padding: 15px;
+    margin: 15px;
+}
+.boton-ver-mas
+{
+    background-color: #70A7B6 !important; /* Fondo blanco */
+    border: 2px solid #ffffff !important; /* Borde sólido */
+    color: #ffffff !important; /* Color del texto */
+    width: 120px !important;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 17px !important;
+    border-radius: 15px !important;
+    justify-content: center;
+    margin-left: 45% !important;
+    margin-bottom: 1%;
+}
+
+.boton-ver-mas:hover{
+    transform: scale(1.1) !important; /* Escala el botón en hover */
+    background-color: #cd575b  !important;
+    border: 3px solid #ffffff !important; /* Borde sólido */
+
+}

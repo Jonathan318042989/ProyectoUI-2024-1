@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music & Merch</title>
+    <link rel="stylesheet" type="text/css" href="../../styles.css">
+    <link rel="stylesheet" href="../../bootstrap.css"/>
+    <link rel="stylesheet" href="./recursos/estilo-productos.css">
+
+
+    <link rel="stylesheet" href="../recursos/carrito.css">
+    <link rel="stylesheet" href="../recursos/estilo.css">
+    <link rel="stylesheet" href="../recursos/estiloHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #010315;">
+    <div class="container-fluid">
+        <a class="navbar-brand m-0 p-0" href="../home.html">
+            <img src="../../images/logocompleto.png" alt="" width="150px">
+        </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          </li>
+        </ul>
+
+        <form class="d-flex mx-auto">
+            <input class="form-control busqueda me-15" type="search" placeholder="Encuentra más de 100 productos!" aria-label="Search">
+            <button class="btn btn-danger boton_buscar" type="submit">Buscar</button>
+        </form>
+
+
+        <a id="btnRegistro" href="../home.html" class="btn mi-boton-custom me-5">Inicio</a>
+        <a href="carrito.html" id="boton-carrito"><img src="../recursos/imagenes/carrito-icono.png" style="width: 4vh;" alt="Carrito Compras"><colortxt><span id="contadorcarrito"> 0 </colortxt></span></a>
+
+
+
+
+      </div>
+
+      
+
+  
+
+    </div>
+  </nav>
+
+  <ul class="nav justify-content-left categorias" style="background-color: #F66065;">
+    <li class="nav-item">
+      <a class="nav-link active name_cat" aria-current="page" href="#">Playeras</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link name_cat" href="#">Accesorios</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link name_cat" href="#">Discos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link name_cat" href="#">Morrales</a>
+      </li>
+    
+  </ul>
+
+  <!--- Contenedor de la info de producto-->
+  <div class="producto">
+    <!--Imagen del producto-->
+    <img src="recursos/item.jpg" class="imagen-prod">
+    <div class="info-producto">
+        <h1>Nombre del producto.</h1>
+        <h3>Fabricante / Autor</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus mi ac quam semper condimentum. 
+            Donec ut euismod sapien. Integer eu mauris enim. Nulla suscipit volutpat magna quis placerat. 
+            Mauris laoreet pellentesque egestas. Nunc augue purus, faucibus at nisl eget, semper laoreet massa. 
+            Duis ante metus, blandit at aliquet at, congue vel risus. Nunc sed nibh sed ante mollis fermentum.
+        </p>
+        <p>
+            Curabitur porttitor urna et convallis finibus. Donec malesuada nibh nec posuere tincidunt. 
+            Pellentesque ipsum tellus, pellentesque nec orci et, posuere faucibus est. 
+            Praesent turpis odio, pellentesque ut condimentum quis, convallis non dolor. 
+            Phasellus porta finibus viverra. Ut blandit, elit ut tristique scelerisque, elit ligula 
+            mollis massa, non tempus odio lectus quis nunc. Donec pellentesque feugiat massa a volutpat. 
+        </p>
+        <!--Estrellas que reflejan el puntaje. Debe tener esta estructura para que el script json pueda colorearlo
+        correctamente. data-rating contiene el puntaje-->
+        <div class="rating" id="main-rating" data-rating="4.2">
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <!--Label para mostrar el valor exacto del puntaje-->
+            <label class="star-puntuacion"></label>
+        </div>
+        <div class="precio-compra">
+            <h1>$XXX.XX</h1>
+        </div>
+    </div>
+</div>
+<!-- Contenedor de las reseñas-->
+<div id="reseñas-container">
+    <div class="reseña">
+        <h2>Autor</h2>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus mi ac quam semper condimentum. 
+                Donec ut euismod sapien. Integer eu mauris enim. Nulla suscipit volutpat magna quis placerat. 
+                Mauris laoreet pellentesque egestas. Nunc augue purus, faucibus at nisl eget, semper laoreet massa. 
+                Duis ante metus, blandit at aliquet at, congue vel risus. Nunc sed nibh sed ante mollis fermentum.
+            </p>
+        </div>
+        <div class="rating" data-rating="3.0">
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-puntuacion"></label>
+        </div>
+    </div>
+    <div class="reseña">
+        <h2>Autor</h2>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus mi ac quam semper condimentum. 
+                Donec ut euismod sapien. Integer eu mauris enim. Nulla suscipit volutpat magna quis placerat. 
+                Mauris laoreet pellentesque egestas. Nunc augue purus, faucibus at nisl eget, semper laoreet massa. 
+                Duis ante metus, blandit at aliquet at, congue vel risus. Nunc sed nibh sed ante mollis fermentum.
+            </p>
+        </div>
+        <div class="rating" data-rating="5.0">
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-puntuacion"></label>
+        </div>
+    </div>
+    <div class="reseña">
+        <h2>Autor</h2>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus mi ac quam semper condimentum. 
+                Donec ut euismod sapien. Integer eu mauris enim. Nulla suscipit volutpat magna quis placerat. 
+                Mauris laoreet pellentesque egestas. Nunc augue purus, faucibus at nisl eget, semper laoreet massa. 
+                Duis ante metus, blandit at aliquet at, congue vel risus. Nunc sed nibh sed ante mollis fermentum.
+            </p>
+        </div>
+        <div class="rating" data-rating="4.5">
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-rating">★</label>
+            <label class="star-puntuacion"></label>
+        </div>
+    </div>
+</div>
+<!--Boton para cargar mas reseñas-->
+    <!--Boton para cargar mas reseñas-->
+    <button class="boton-ver-mas" onclick="loadMore(3)">Ver mas</button>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Musich & Merch © 2018</p>
+        </footer>
+      </div>
+</body>
+
+
+</html>

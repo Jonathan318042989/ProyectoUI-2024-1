@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta cgarset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recursos/estilo.css">
+    <link rel="stylesheet" href="./recursos/carrito.css">
+    <script src = "./js/carrito.js" defer></script>
+    <script src = "./js/funcionesCarrito.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet" href="../bootstrap.css"/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <title> Carrito de Compras </title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #010315;">
+        <div class="container-fluid">
+            <a class="navbar-brand m-0 p-0" href="#">
+                <img src="../images/logocompleto.png" alt="" width="150px">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                </li>
+            </ul>
+    
+            <form class="d-flex mx-auto">
+                <input class="form-control busqueda me-15" type="search" placeholder="Encuentra más de 100 productos!" aria-label="Search">
+                <button class="btn btn-danger boton_buscar" type="submit">Buscar</button>
+            </form>
+    
+    
+            <a id="btnRegistro" href="./home.html" class="btn mi-boton-custom me-5">Inicio</a>
+    
+            <a href="carrito.html" id="boton-carrito"><img src="recursos/imagenes/carrito-icono.png   " style="width: 4vh;" alt="Carrito Compras"><colortxt><span id="contadorcarrito"> 0 </colortxt></span></a>
+    
+    
+            </div>
+    
+        
+    
+        </div>
+        </nav>
+    <main>
+        <p id="carrito-empty">No tienes elementos en el carrito. <a href="./home.html">Añade algún artículo.</a></p>
+        <section id="contenedor-productos"></section>
+        <section id="totales">
+            <estilizarTotal>
+                Número de articulos: <span id="existencias">0</span><br>
+                Precio total: $<span id="precio">0</span><br>
+                <button id="comprable"> Comprar </button>
+            </estilizarTotal>
+            </section">
+        </section>
+    </main>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Musich & Merch © 2018</p>
+        </footer>
+      </div>
+</body>
+</html>

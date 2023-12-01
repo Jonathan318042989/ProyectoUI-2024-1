@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap');
+
+body{
+    background-color: #E8E9EB !important;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+.busqueda{
+    margin-left: -100px !important; /* Establece un margen izquierdo negativo para mover el elemento hacia la izquierda */
+    width: 400px !important;
+    border: 2px solid #FA3C42 !important;
+    background-color: #D9D9D9 !important;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+@media (max-width: 992px) {
+    .busqueda {
+        width: 200px !important;
+        font-size: 0px !important;
+        margin-left: auto !important;
+    }
+  }
+
+.busqueda:hover{
+    background-color: #ffffff !important;
+}
+
+.boton_buscar{
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+
+.mi-boton-custom {
+    background-color: #70A7B6 !important; /* Fondo blanco */
+    border: 2px solid #ffffff !important; /* Borde sólido */
+    color: #ffffff !important; /* Color del texto */
+    width: 120px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 17px !important;
+
+}
+
+
+.mi-boton-custom:hover{
+    transform: scale(1.1) !important; /* Escala el botón en hover */
+    background-color: #3b6e7d !important;
+    border: 3px solid #ffffff !important; /* Borde sólido */
+
+}
+
+.carrito:hover{
+    transform: scale(1.1) !important; /* Escala el botón en hover */
+}
+@media (max-width: 992px) {
+    .carrito {
+        margin-left: 200px !important;
+    }
+  }
+
+
+/* Barrita de categorias */
+
+.categorias{
+    height: 28px !important;
+    font-size: 15px !important;
+}
+
+.name_cat{
+    color: beige !important;
+    padding: 2px !important;
+    margin-top: 1px !important;
+    margin-left: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.name_cat:hover{
+    /*transform: translateY(-3px) !important;*/
+    color:beige!important;
+    background-color: #ba4c4f !important;
+    border-radius: 10px !important;
+
+
+}
+
+
+/* Imagen del Landing*/
+
+.imagen_principal{
+    margin-top: 1% !important;
+    border-radius: 4px !important;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    width: 100% !important;
+    height: 70%;
+    margin-bottom: 10px !important;
+
+}
+
+.contenedor_imagen {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+    position: relative !important;
+  }
+
+.img-wrapper{
+
+    max-width: 100% !important;
+    height: 23vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-img-top{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* CAROUSEL*/
+.carousel-inner{
+    margin-top: 2%;
+}
+
+.card {
+    border-radius: 10px !important;
+    padding: 20px;
+    margin-left: 3%;
+    margin-bottom: 5% !important;
+    margin-right: 3%;
+    box-shadow: 0 8px 10px rgba(24, 24, 24, 0.5); /* Agrega sombra con valores específicos */
+    background-color: #C5C6CA !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+.card:hover {
+    background-color: #cb6165 !important; /* Cambia el color al pasar el ratón sobre la tarjeta */
+    transform: scale(1.01);
+    box-shadow: 0 10px 14px rgba(24, 24, 24, 0.5); /* Agrega sombra con valores específicos */
+
+}
+
+.card-img-top {
+    height: 250px; /* Ajusta la altura al 100% del contenedor */
+    width: 280px;  /* Ajusta el ancho al 100% del contenedor */
+    object-fit: cover; /* Escala la imagen para cubrir todo el contenedor manteniendo las proporciones */
+    box-shadow: 0 8px 10px rgba(24, 24, 24, 0.5); /* Agrega sombra con valores específicos */
+    border-radius: 5px !important;
+
+}
+
+
+.card-body{
+    font-family: 'League Spartan', sans-serif;
+    margin-bottom: 18px !important;
+
+}
+
+.card-title{
+    color: #010315;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-top: 15px !important;
+}
+.title-negro{
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del contenedor padre */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del enlace */
+}
+
+.estrellas{
+    margin-top: -5% !important;
+    margin-left: 12px !important;
+    height: 25px !important;
+    width: 100px !important;
+}
+
+.price{
+    font-size: 21px !important;
+    font-weight: 600 !important;
+    margin-bottom: 0 !important;
+    color: #31525d;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px !important;
+    background-color: #c25252 !important;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: #992f2f;
+}
+
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    border-radius: 100px !important;
+    background-color: #5b91a0 !important;
+    height: 40px !important;
+    width: 40px !important;
+    margin-top: 200px !important;
+    padding: 5px !important;
+    opacity: 1 !important;
+
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    transform: scale(1.5);
+}
+
+
+.articulos_fav{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px !important;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 38% !important;
+    margin-bottom: -10px !important;
+
+
+}
+
+
+.footer-basic {
+    padding:40px 0 !important;
+    background-color:  #010315 !important;
+    color: #70A7B6 ;
+    font-family: 'League Spartan', sans-serif;
+
+    
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #70A7B6;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color: #70A7B6;
+    margin-bottom:0;
+  }

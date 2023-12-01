@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap');
+
+body{
+    background-color: #E8E9EB !important;
+}
+.busqueda{
+    margin-left: -100px !important; /* Establece un margen izquierdo negativo para mover el elemento hacia la izquierda */
+    width: 400px !important;
+    border: 2px solid #FA3C42 !important;
+    background-color: #D9D9D9 !important;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+@media (max-width: 992px) {
+    .busqueda {
+        width: 200px !important;
+        font-size: 0px !important;
+        margin-left: auto !important;
+    }
+  }
+
+.busqueda:hover{
+    background-color: #ffffff !important;
+}
+
+.boton_buscar{
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+
+.mi-boton-custom {
+    background-color: #70A7B6 !important; /* Fondo blanco */
+    border: 2px solid #ffffff !important; /* Borde sólido */
+    color: #ffffff !important; /* Color del texto */
+    width: 120px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 17px !important;
+
+}
+
+
+.mi-boton-custom:hover{
+    transform: scale(1.1) !important; /* Escala el botón en hover */
+    background-color: #3b6e7d !important;
+    border: 3px solid #ffffff !important; /* Borde sólido */
+
+}
+
+.carrito:hover{
+    transform: scale(1.1) !important; /* Escala el botón en hover */
+}
+@media (max-width: 992px) {
+    .carrito {
+        margin-left: 200px !important;
+    }
+  }
+
+
+/* Barrita de categorias */
+
+.categorias{
+    height: 28px !important;
+    font-size: 15px !important;
+}
+
+.name_cat{
+    color: beige !important;
+    padding: 2px !important;
+    margin-top: 1px !important;
+    margin-left: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.name_cat:hover{
+    /*transform: translateY(-3px) !important;*/
+    color:beige!important;
+    background-color: #ba4c4f !important;
+    border-radius: 10px !important;
+
+
+}
+
+
+/* Imagen del Landing*/
+
+.imagen_principal{
+    margin-top: 1% !important;
+    border-radius: 4px !important;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    width: 100% !important;
+    height: 70%;
+
+}
+
+.contenedor_imagen {
+    width: 100% !important;
+  }
+
+.formulario {
+    margin: 10px auto; 
+    width:50%;
+    padding: 20px;
+    text-align: center;
+    background-color: #BCBCC3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.iniciosesion{
+    padding: 40px;
+    width: 50%;
+}
+
+.tituloFormulario {
+    text-align: center;
+    color: #000000; 
+    margin: 10px;
+    padding-top: 10px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    width: 70%;
+}
+
+input:hover{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input[type=submit]{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+label {
+    color: #000000;
+}
+
+.boton_enviar{
+    background-color: #70A7B6 !important; /* Fondo blanco */
+    border: 2px solid #ffffff !important; /* Borde sólido */
+    color: #ffffff !important; /* Color del texto */
+    width: 150px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 19px !important;
+    border-radius: 10px;
+}
+.boton_enviar:hover{
+    background-color:  #FA3C42  !important;
+}
+
+.boton_enviar:active {
+    transform: scale(0.95); /* Puedes ajustar la escala según tus preferencias */
+}
+
+
+.footer-basic {
+    padding:40px 0 !important;
+    background-color:  #010315 !important;
+    color: #70A7B6 ;
+    font-family: 'League Spartan', sans-serif;
+
+
+}
+
+.footer-basic ul {
+padding:0;
+list-style:none;
+text-align:center;
+font-size:18px;
+line-height:1.6;
+margin-bottom:0;
+}
+
+.footer-basic li {
+padding:0 10px;
+}
+
+.footer-basic ul a {
+color:inherit;
+text-decoration:none;
+opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+opacity:1;
+}
+
+.footer-basic .social {
+text-align:center;
+padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+font-size:24px;
+width:40px;
+height:40px;
+line-height:40px;
+display:inline-block;
+text-align:center;
+border-radius:50%;
+border:1px solid #70A7B6;
+margin:0 8px;
+color:inherit;
+opacity:0.75;
+}
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color: #70A7B6;
+    margin-bottom:0;
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music & Merch</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #010315;">
+        <div class="container-fluid">
+            <a class="navbar-brand m-0 p-0" href="#">
+                <img src="./images/logocompleto.png" alt="" width="150px">
+            </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              </li>
+            </ul>
+
+            <form class="d-flex mx-auto">
+                <input class="form-control busqueda me-15" type="search" placeholder="Encuentra más de 100 productos!" aria-label="Search">
+                <button class="btn btn-danger boton_buscar" type="submit">Buscar</button>
+            </form>
+
+
+            <button type="button" class="btn mi-boton-custom me-5">Registrate!</button>
+
+            <a class="navbar-brand" href="#">
+                <img src="./images/compra.png" alt="" width="35" height="35" class="d-inline-block align-text-top carrito">
+              </a>
+
+          </div>
+
+      
+
+        </div>
+      </nav>
+      <ul class="nav justify-content-left categorias" style="background-color: #F66065;">
+        <li class="nav-item">
+          <a class="nav-link active name_cat" aria-current="page" href="#">Playeras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name_cat" href="#">Accesorios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name_cat" href="#">Discos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link name_cat" href="#">Morrales</a>
+          </li>
+        
+      </ul>
+      <h3 class="tituloFormulario">Iniciar Sesión</h3>
+      <form id="inicio" class="formulario iniciosesion">
+        <p><input type="email" name="correo"  size="30" required placeholder="Correo electrónico"/></p>
+        <p><input type="password" name="password" size="30" required placeholder="Contraseña"></p>
+        <p><button type="submit" id="submit-btn">Enviar</button></p>
+    </form>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

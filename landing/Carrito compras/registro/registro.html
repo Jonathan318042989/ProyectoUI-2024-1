@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music & Merch</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.css"/>
+
+    <link rel="stylesheet" href="../recursos/carrito.css">
+    <link rel="stylesheet" href="../recursos/estilo.css">
+    <link rel="stylesheet" href="../recursos/estiloHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script>
+      function Validacion(e){
+      
+          const correo = document.forms.Registro.correo.value;
+          const password = document.forms.Registro.password.value;
+          const Rpassword = document.forms.Registro.Rpassword.value;
+      
+          const regexCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; 
+          const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+          if(correo == "" || !regexCorreo.test(correo)){
+              event.preventDefault(); 
+              window.alert("Ingresa un correo válido");
+          }
+      
+          if(password == "" || !password.match(regexPassword)){
+              event.preventDefault(); 
+              window.alert("Ingresa una contraseña válida, debe ser de al menos 6 carácteres, contener al menos una letra mayúscula, una minúscula y un dígito");
+          }
+      
+          if(Rpassword == "" || Rpassword!=password){
+              event.preventDefault(); 
+              window.alert("La contraseña debe ser igual");
+          }
+      }
+      
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #010315;">
+    <div class="container-fluid">
+        <a class="navbar-brand m-0 p-0" href="../home.html">
+            <img src="./images/logocompleto.png" alt="" width="150px">
+        </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          </li>
+        </ul>
+
+        <form class="d-flex mx-auto">
+            <input class="form-control busqueda me-15" type="search" placeholder="Encuentra más de 100 productos!" aria-label="Search">
+            <button class="btn btn-danger boton_buscar" type="submit">Buscar</button>
+        </form>
+
+
+        <a id="btnRegistro" href="../home.html" class="btn mi-boton-custom me-5">Inicio</a>
+        <a href="../carrito.html" id="boton-carrito"><img src="../recursos/imagenes/carrito-icono.png" style="width: 4vh;" alt="Carrito Compras"><colortxt><span id="contadorcarrito"> 0 </colortxt></span></a>
+
+
+
+
+      </div>
+
+      
+
+  
+
+    </div>
+  </nav>
+      <!--* Parte de las categorias --> 
+
+      <ul class="nav justify-content-left categorias" style="background-color: #F66065;">
+        <li class="nav-item">
+          <a class="nav-link active name_cat" aria-current="page" href="#">Playeras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name_cat" href="#">Accesorios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name_cat" href="#">Discos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link name_cat" href="#">Morrales</a>
+          </li>
+        
+      </ul>
+      <h3 class="tituloFormulario">Registro</h3>
+      <form id="Registro" class="formulario" onsubmit="return Validacion();" method="POST">
+        <p><input type="text" name="nombre" size="30" required placeholder="Nombre(s)"/></p>
+        <p><input type="text" name="apellidoP" size="30" required placeholder="Apellido paterno"/></p>
+        <p><input type="text" name="apellidoM" size="30" required placeholder="Apellido Materno"/></p>
+        <p><input type="number" name="telefono" size="10" required placeholder="Telefono"/></p>
+        <p><input type="text" name="pais" size="30" required placeholder="Pais"/></p>
+        <p><input type="text" name="estado" size="30" required placeholder="Estado"/></p>
+        <p><input type="text" name="ciudad" size="30" required placeholder="Ciudad"/></p>
+        <p><input type="text" name="direccion" size="60" required placeholder="Dirección"/></p>
+        <p><input type="number" name="codigopostal" size="5" required placeholder="Código Postal"/></p>
+        <p><input type="email" name="correo"  size="30" required placeholder="Correo electrónico"/></p>
+        <p><input type="password" name="password" size="30" required placeholder="Contraseña"></p>
+        <p><input type="password" name="Rpassword"  size="30" required placeholder="Confirmar contraseña"></p>
+        <p><button type="submit" id="submit-btn" class="boton_enviar">Enviar</button></p>
+    </form>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../js/index_home.js"></script>
+
+    <div class="footer-basic">
+      <footer>
+          <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Home</a></li>
+              <li class="list-inline-item"><a href="#">Services</a></li>
+              <li class="list-inline-item"><a href="#">About</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Musich & Merch © 2018</p>
+      </footer>
+    </div>
+</body>
+
+
+</html>
