@@ -7,6 +7,7 @@ const precioE = document.getElementById("precio");
 const carritoVoid = document.getElementById("carrito-empty");
 const todosE = document.getElementById("totales");
 const tusP = document.getElementById("carrito-full");
+const reboot = document.getElementById("comprable");
 
 /** Función que crea las tarjetas para cada articulo que el usuario haya añadido al carrito .
  * Igualmente en esta función se añade el comportamiento del carrito cuando se le suma un artículo, o en su caso, se resta.
@@ -77,9 +78,18 @@ function comprobarCarroV(){
     const productos = JSON.parse(localStorage.getItem("articulos"));
     carritoVoid.classList.toggle("escondido",productos && productos.length>0);
     todosE.classList.toggle("escondido",!(productos && productos.length>0));
-    tusP.classList.toggle("escondido",!(productos && productos.length>0));
+    //tusP.classList.toggle("escondido",!(productos && productos.length>0));
 }
 
 /** Se ejecuta la función anterior */
 comprobarCarroV();
+
+reboot.addEventListener("click", carritoCero);
+function carritoCero() {
+    localStorage.removeItem("articulos");
+    actualizarTotal();
+    crearPresentacionArticulos();
+    alert("Gracias por su compra");
+    location.reload();
+}
 

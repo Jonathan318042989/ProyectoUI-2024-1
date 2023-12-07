@@ -3,17 +3,18 @@
 /** Función que añade elementos al carrito. Igual devuelve un número. */
 function aniadirAlCarro(producto){
     const memoria = JSON.parse(localStorage.getItem("articulos"));
-    console.log(memoria);
     let counter = 0;
+    console.log(memoria);
     if(!memoria){
-        const nuevoProd = productoAMemoria(producto)
+        const nuevoProd = productoAMemoria(producto);
         localStorage.setItem("articulos", JSON.stringify([nuevoProd]));
         counter = 1;
+        actualizarContadorCarro();
     } else{
         const indiceProd = memoria.findIndex(articulo => articulo.id === producto.id);
         console.log(indiceProd);
         const nuevaMemory = memoria;
-        if(indiceProd === -1){
+        if(indiceProd === -1 || null){
             nuevaMemory.push(productoAMemoria(producto));
             counter = 1;
         } else{
@@ -41,8 +42,13 @@ const contadorCarritoE = document.getElementById("contadorcarrito");
 /** Función que actualiza el contador del carrito */
 function actualizarContadorCarro(){
     const memoria = JSON.parse(localStorage.getItem("articulos"));
-    const contador = memoria.reduce((acum, current) => acum+current.cantidad, 0);
-    contadorCarritoE.innerText = contador;
+    if(memoria && memoria.length > 0 ){
+        const contador = memoria.reduce((acum, current) => acum+current.cantidad, 0);
+        contadorCarritoE.innerText = contador;
+        console.log(contador);
+    } else {
+        contadorCarritoE.innerText = 0;
+    }
 }
 
 /** Función que elimina elementos del carrito */
