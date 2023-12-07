@@ -83,3 +83,27 @@ CREATE TABLE Resenia(
 	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
     FOREIGN KEY (id_producto) REFERENCES Producto(id_producto)
 );
+
+CREATE TABLE Empleado(
+	id_empleado INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(50),
+    apellido_p VARCHAR(50),
+    apellido_m VARCHAR(50),
+    correo VARCHAR(255),
+    telefono CHAR(10)
+);
+
+CREATE TABLE Turno(
+	id_empleado INT,
+    zona_encargada VARCHAR(50),
+    dia VARCHAR(20),
+    hora_entrada TIME,
+    hora_salida TIME,
+    FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado)
+);
+
+INSERT INTO Empleado(id_empleado, nombre, apellido_p, apellido_m, correo, telefono)
+VALUES (1, "Jonathan", "Martínez", "Camarillo", "jonathanmartinezc0910@ciencias.unam.mx", "5555555555");
+
+INSERT INTO Empleado(id_empleado, nombre, apellido_p, apellido_m, correo, telefono)
+VALUES (2, "Jose", "Ortiz", "Marin", "joseom@ciencias.unam.mx", "5555555555");
