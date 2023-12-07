@@ -164,3 +164,8 @@ body{
     color: #70A7B6;
     margin-bottom:0;
   }
+
+  #direccion{
+    color: white;
+    text-decoration: none;
+  }

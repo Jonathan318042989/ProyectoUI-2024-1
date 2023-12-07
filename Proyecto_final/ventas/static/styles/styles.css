@@ -74,7 +74,7 @@ body{
 
 .botonA{
     height: 100px !important;
-    width: 200px !important;
+    width: 160px !important;
     padding: 5px !important;
     margin: 5px;
     border-radius: 10px !important;
@@ -197,4 +197,9 @@ body{
     font-size:13px;
     color: #70A7B6;
     margin-bottom:0;
+  }
+
+  /**Atención */
+  #direccion{
+    position: left;
   }
