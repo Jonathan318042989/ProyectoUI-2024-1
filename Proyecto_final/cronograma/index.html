@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+    />
+    <meta
+      name="keywords"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./static/styles/styles.css" />
+    <title>Music & Merch</title>
+    <link rel="stylesheet" type="text/css" href="./static/styles/styles.css">
+    <link rel="stylesheet" href="./static/styles/bootstrap.css"/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #010315;">
+      <div class="container-fluid">
+          <a class="navbar-brand m-0 p-0" href="#">
+              <img src="./images/logocompleto.png" alt="" width="150px">
+          </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            </li>
+          </ul>
+
+          <form class="d-flex mx-auto">
+              <input class="form-control busqueda me-15" type="search" placeholder="¿Qué acción quieres realizar?" aria-label="Search">
+              <button class="btn btn-danger boton_buscar" type="submit">Buscar</button>
+          </form>
+
+
+          <button id="btnRegistro" type="button" class="btn mi-boton-custom me-5">Iniciar sesión</button>
+
+          <a class="navbar-brand" href="#">
+              <img src="./images/compra.png" alt="" width="35" height="35" class="d-inline-block align-text-top carrito">
+            </a>
+
+        </div>
+
+    
+
+      </div>
+    </nav>
+
+    <h6 class="title"> Cronograma </h6>
+
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date"> Diciembre 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Dom</div>
+            <div>Lun</div>
+            <div>Mar</div>
+            <div>Mie</div>
+            <div>Jue</div>
+            <div>Vie</div>
+            <div>Sab</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Ir</button>
+            </div>
+            <button class="today-btn">Hoy</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">Semana</div>
+          <div class="event-date">12 diciembre 2022</div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Agregar evento</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Name" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time From"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time To"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Agregar evento</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+
+
+
+
+    <div class="footer-basic">
+      <footer>
+          <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Home</a></li>
+              <li class="list-inline-item"><a href="#">Services</a></li>
+              <li class="list-inline-item"><a href="#">About</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Musich & Merch © 2018</p>
+      </footer>
+    </div>
+
+
+
+    <script src="./static/scripts/bootstrap.js"></script>
+
+
+
+    <script src="./static/scripts/main.js"></script>
+  </body>
+</html>
