@@ -78,7 +78,6 @@ function comprobarCarroV(){
     const productos = JSON.parse(localStorage.getItem("articulos"));
     carritoVoid.classList.toggle("escondido",productos && productos.length>0);
     todosE.classList.toggle("escondido",!(productos && productos.length>0));
-    //tusP.classList.toggle("escondido",!(productos && productos.length>0));
 }
 
 /** Se ejecuta la función anterior */
