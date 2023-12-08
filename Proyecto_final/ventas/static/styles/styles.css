@@ -72,6 +72,18 @@ body{
 
 }
 
+.botonA{
+  padding: 5px !important;
+  margin: 5px;
+  border-radius: 10px !important;
+  border: 2px solid #bf2229 !important;
+  font-family: 'League Spartan', sans-serif !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Definición de la sombra */
+  font-size: 20px !important;
+  overflow: hidden; /* Evitar que el texto se salga del contenedor */
+
+}
+
 .botonA:hover{
     background-color: #70A7B6 !important;
     border: 2px solid  rgb(90, 161, 181) !important;
