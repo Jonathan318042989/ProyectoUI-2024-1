@@ -1,0 +1,179 @@
+/** Archivo de estilo complementario para la página del carrito */
+
+/** Estiliza el contenedor en el cuál se presentarán los artículos que el usuario tenga */
+body{
+    background-color: #E8E9EB !important;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+#contenedor-productos{
+    width: auto !important;
+    height: auto !important;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+/** Estiliza el como se presentarán los artículos que el usuario tenga */
+.tarjeta-articulo{
+    display: flex;
+    height: 20% !important;
+    width: 60% !important;
+    gap: 20px;
+    margin: 20px auto;
+    align-items: center;
+    background-color: rgb(188,188,195);
+    border-radius: 15px;
+    box-shadow: 0 10px 14px rgba(24, 24, 24, 0.5); /* Agrega sombra con valores específicos */
+
+
+}
+
+/** Estiliza las imágenes de las tarjetas de los artículos */
+.imagen-carrito{
+    width: 25% !important;
+    height: 95% !important;
+    padding: 1% !important;
+    border-radius: 10px;
+    background-size: cover;
+
+
+}
+
+/** Estiliza el apartado donde se presenta el precio total a pagar junto con el número de artículos que el usuario tenga */
+#totales{
+    text-align: center;
+}
+
+/** Estiliza el texto a la izquierda */
+estilizar{
+    text-align: left;
+    font-size:x-large;
+}
+
+/** Estiliza el texto al centro */
+estilizarTotal{
+    text-align: center;
+    font-size:x-large;
+
+}
+
+.producto-carrito{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.precio-carrito{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #20414a;
+
+}
+
+/** Estliza el texto al centro */
+#carrito-empty{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/** Estiliza el texto al centro de la clase indicada */
+#carrito-full{
+    text-align: center;
+    font-size: x-large;
+}
+/** Estiliza el boton que permite comprar los artículos del carrito */
+#comprable{
+
+    margin: 20px 20px;
+    background-color:#FA3C42 !important; /* Fondo blanco */
+    border: 3px solid #ffffff !important; /* Borde sólido */
+    color: #ffffff !important; /* Color del texto */
+    width: 120px;
+    height: 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 17px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 14px rgba(24, 24, 24, 0.5);
+}
+
+#comprable:hover{
+    background-color: #70A7B6 !important;
+}
+
+#comprable:active {
+    transform: scale(0.95); /* Puedes ajustar la escala según tus preferencias */
+}
+
+
+/** Función no implementada, estilizar un boton para reinicar el carrito. NO IMPLEMENTADO*/
+#reboot{
+    background-color: #E8E9EB;
+    margin: 20px 20px;   
+}
+
+/** Estilizado para el elemento anterior, igualmente no implementado */
+#reboot:hover{
+    background-color: #F8F8F8;
+    cursor: pointer;
+}
+
+/** Estiliza el boton de + del carrito */
+#cantidadm{
+    background-color: #70A7B6;
+    height: auto !important;
+    width: 40px !important;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(50, 51, 67);
+
+}
+
+/** Efecto que tiene el boton + al pasar el cursor sobre el boton */
+#cantidadm:hover{
+    cursor: pointer;
+    background-color:#FA3C42;
+}
+
+/** Estiliza el boton - del carrito */
+#cantidadmi{
+
+    background-color: #70A7B6;
+    height: auto !important;
+    width: auto !important;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(50, 51, 67);
+
+}
+
+.div-botones{
+    border: #20414a 2px;
+}
+
+.contadorcantidad{
+    text-align: end;
+    margin-left: auto !important;
+}
+
+/** Efecto que tiene el boton - al pasar el cursor sobre el boton */
+#cantidadmi:hover{
+    cursor: pointer;
+    background-color:#FA3C42;
+}
+
+#precio{
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 767px) {
+    .producto-carrito {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+}
