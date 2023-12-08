@@ -691,3 +691,17 @@ body {
 .credits a:hover {
   text-decoration: underline;
 }
+
+.botonA:hover{
+  background-color: #70A7B6 !important;
+  border: 2px solid  rgb(90, 161, 181) !important;
+  transform: scale(1.02);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2); /* Definición de la sombra */
+
+
+}
+
+.botonA:active{
+  background-color:  rgb(46, 124, 145) !important; 
+  
+}
