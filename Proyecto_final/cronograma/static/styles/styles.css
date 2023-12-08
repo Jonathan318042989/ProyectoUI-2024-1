@@ -516,7 +516,7 @@ body {
 }
 .add-event-wrapper {
   position: absolute;
-  bottom: 100px;
+  bottom: 120px;
   left: 50%;
   width: 90%;
   max-height: 0;
@@ -527,7 +527,7 @@ body {
   transition: max-height 0.5s ease;
 }
 .add-event-wrapper.active {
-  max-height: 300px;
+  max-height: 400px;
 }
 .add-event-header {
   width: 100%;

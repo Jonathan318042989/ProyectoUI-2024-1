@@ -13,6 +13,7 @@ const calendar = document.querySelector(".calendar"),
   addEventWrapper = document.querySelector(".add-event-wrapper "),
   addEventCloseBtn = document.querySelector(".close "),
   addEventTitle = document.querySelector(".event-name "),
+  addPiso = document.querySelector(".piso-name"),
   addEventFrom = document.querySelector(".event-time-from "),
   addEventTo = document.querySelector(".event-time-to "),
   addEventSubmit = document.querySelector(".add-event-btn ");
@@ -23,37 +24,20 @@ let month = today.getMonth();
 let year = today.getFullYear();
 
 const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
 ];
 
-// const eventsArr = [
-//   {
-//     day: 13,
-//     month: 11,
-//     year: 2022,
-//     events: [
-//       {
-//         title: "Event 1 lorem ipsun dolar sit genfa tersd dsad ",
-//         time: "10:00 AM",
-//       },
-//       {
-//         title: "Event 2",
-//         time: "11:00 AM",
-//       },
-//     ],
-//   },
-// ];
 
 const eventsArr = [];
 getEvents();
@@ -78,7 +62,6 @@ function initCalendar() {
   }
 
   for (let i = 1; i <= lastDate; i++) {
-    //check if event is present on that day
     let event = false;
     eventsArr.forEach((eventObj) => {
       if (
@@ -142,7 +125,6 @@ next.addEventListener("click", nextMonth);
 
 initCalendar();
 
-//function to add active on day
 function addListner() {
   const days = document.querySelectorAll(".day");
   days.forEach((day) => {
@@ -150,16 +132,12 @@ function addListner() {
       getActiveDay(e.target.innerHTML);
       updateEvents(Number(e.target.innerHTML));
       activeDay = Number(e.target.innerHTML);
-      //remove active
       days.forEach((day) => {
         day.classList.remove("active");
       });
-      //if clicked prev-date or next-date switch to that month
       if (e.target.classList.contains("prev-date")) {
         prevMonth();
-        //add active to clicked day afte month is change
         setTimeout(() => {
-          //add active where no prev-date or next-date
           const days = document.querySelectorAll(".day");
           days.forEach((day) => {
             if (
@@ -172,7 +150,6 @@ function addListner() {
         }, 100);
       } else if (e.target.classList.contains("next-date")) {
         nextMonth();
-        //add active to clicked day afte month is changed
         setTimeout(() => {
           const days = document.querySelectorAll(".day");
           days.forEach((day) => {
@@ -229,7 +206,6 @@ function gotoDate() {
   alert("Invalid Date");
 }
 
-//function get active day day name and date and update eventday eventdate
 function getActiveDay(date) {
   const day = new Date(year, month, date);
   const dayName = day.toString().split(" ")[0];
@@ -237,7 +213,7 @@ function getActiveDay(date) {
   eventDate.innerHTML = date + " " + months[month] + " " + year;
 }
 
-//function update events when a day is active
+
 function updateEvents(date) {
   let events = "";
   eventsArr.forEach((event) => {
@@ -261,7 +237,7 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>No hay eventos</h3>
+            <h3>No hay turnos asignados</h3>
         </div>`;
   }
   eventsContainer.innerHTML = events;
@@ -287,6 +263,7 @@ document.addEventListener("click", (e) => {
 addEventTitle.addEventListener("input", (e) => {
   addEventTitle.value = addEventTitle.value.slice(0, 60);
 });
+
 
 function defineProperty() {
   var osccred = document.createElement("div");
@@ -329,10 +306,11 @@ addEventTo.addEventListener("input", (e) => {
 
 //function to add event to eventsArr
 addEventSubmit.addEventListener("click", () => {
-  const eventTitle = addEventTitle.value;
+  const encargado = addEventTitle.value;
+  const piso = addPiso.value;
   const eventTimeFrom = addEventFrom.value;
   const eventTimeTo = addEventTo.value;
-  if (eventTitle === "" || eventTimeFrom === "" || eventTimeTo === "") {
+  if (encargado === "" || eventTimeFrom === "" || eventTimeTo === "") {
     alert("Please fill all the fields");
     return;
   }
@@ -364,18 +342,14 @@ addEventSubmit.addEventListener("click", () => {
       event.year === year
     ) {
       event.events.forEach((event) => {
-        if (event.title === eventTitle) {
+        if (event.title === encargado) {
           eventExist = true;
         }
       });
     }
   });
-  if (eventExist) {
-    alert("Event already added");
-    return;
-  }
   const newEvent = {
-    title: eventTitle,
+    title: encargado + " - " + piso,
     time: timeFrom + " - " + timeTo,
   };
   console.log(newEvent);
@@ -406,6 +380,7 @@ addEventSubmit.addEventListener("click", () => {
   console.log(eventsArr);
   addEventWrapper.classList.remove("active");
   addEventTitle.value = "";
+  addPiso.value = "";
   addEventFrom.value = "";
   addEventTo.value = "";
   updateEvents(activeDay);
@@ -419,7 +394,7 @@ addEventSubmit.addEventListener("click", () => {
 //function to delete event when clicked on event
 eventsContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("event")) {
-    if (confirm("Are you sure you want to delete this event?")) {
+    if (confirm("Este turno se borrará")) {
       const eventTitle = e.target.children[0].children[1].innerHTML;
       eventsArr.forEach((event) => {
         if (
