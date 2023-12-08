@@ -1,0 +1,111 @@
+.head
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label
+{
+    margin: 20px;
+}
+
+h1
+{
+    margin: 20px;
+    text-shadow: gray 2px 2px 2px;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0px;
+}
+li
+{
+    margin: 15px;
+    font-size: large;
+    padding: 15px;
+}
+
+.producto
+{
+    border-top: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.caja-producto
+{
+    font-size: large;
+    margin: 15px;
+
+    border-radius: 10px;
+    align-self: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.href-boton{
+    text-decoration: none;
+    color: white;
+    background-color: #FA3C42;
+    border: 2px solid #bf2229;
+    padding: 10px;
+    margin: 15px;
+
+    font-size: large;
+    text-align: center;
+
+    border-radius: 5px;
+    width: auto;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.href-boton:hover{
+    
+    text-decoration: none;
+    background-color: #70A7B6 !important;
+    border: 2px solid  rgb(90, 161, 181) !important;
+    transform: scale(1.02);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2); /* Definición de la sombra */
+    color: white;
+
+
+}
+
+.href-boton:active{
+    
+    text-decoration: none;
+    background-color:  rgb(46, 124, 145) !important; 
+    color: white;
+}
+
+input[type=text], input[type=number]
+{
+    float: right;
+    background-color: transparent;
+    font-size: large;
+    border: none;
+    border-bottom: #70A7B6 solid 2px;
+    margin-left: 5px;
+}
+textarea
+{
+    resize: none;
+    background-color: white;
+    width: 100%;
+    font-size: large;
+    border: none;
+    border: #70A7B6 solid 2px;
+}
+input[type=text]:focus, input[type=number]:focus
+{
+    outline: none;
+    border-bottom: #FA3C42 solid 2px;
+}
