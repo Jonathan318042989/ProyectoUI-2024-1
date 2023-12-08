@@ -4,12 +4,12 @@ function conectar_bd()
 {
     #Modificar con los datos necesarios del servidor sql
     $servidor = "localhost";
-    $nombrebd = "tienda";
+    $nombrebd = "proyectoui";
     $usuario = "root";
     $contraseña = "root";
 
     ## Cambiar 3307 por el puerto que utilice el servidor de sql
-    $conexion = new mysqli($servidor, $usuario, $contraseña, $nombrebd, '3307') or die("connection failed");;
+    $conexion = new mysqli($servidor, $usuario, $contraseña, $nombrebd, '3306') or die("connection failed");;
     
     return $conexion;
 }
