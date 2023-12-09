@@ -12,6 +12,7 @@ Como se hace uso de xampp, se tiene que situar en la siguiente ubicación: "xamp
 se tiene que crear la base de datos con el script: "sql" que ya viene incluido.
 De ser necesario, se deberá cambiar el usuario y la contraseña de los archivos php usados para la conexión.
 En nuestro caso, lo default era root y root.
-Una vez arreglado ese inconveniente, solo se deberá de levantar el servidor php e ingresar a: "http://localhost/ProyectoUI-2024-1/Proyecto_final/principal_admin/index.html".
+Una vez arreglado ese inconveniente, solo se deberá de levantar el servidor php e ingresar a: 
+"http://localhost/ProyectoUI-2024-1/Proyecto_final/principal_admin/index.html".
 
 
