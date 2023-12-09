@@ -12,7 +12,7 @@
  * En el archivo base o version 1 solo se tienen 5 artículos.
  */
 
- 
+
 
 const articulos = [
     {

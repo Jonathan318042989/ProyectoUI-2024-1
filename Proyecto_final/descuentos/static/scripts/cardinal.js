@@ -79,6 +79,6 @@ function descontar(param, productos){
         guardable = producto.precio - guardable;
         setprecioDesc(guardable);
         console.log("Precio con descuento del " + param + "%: " + precioD)
-    })
-
+    })    
 }
+
