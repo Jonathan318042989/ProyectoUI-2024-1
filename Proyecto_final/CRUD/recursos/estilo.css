@@ -1,0 +1,231 @@
+/**Estilo base de la barra de navegacion*/
+:root
+{
+    --color-negro:rgb(1,3,21);
+    --color-rojo: rgb(250,60,60);
+    --color-azul:rgb(112,167,182);
+    --color-gris: rgb(188,188,195);
+    --color-gris-claro: rgb(233,233,235);
+    --color-blanco: rgb(248,248,248);
+    --color-naranja: #DA886b;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #E8E9EB !important;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+/**Encabezado. Barra con el logo, cuadro de busqueda, registro y carrito*/
+barra-logo
+{
+    background-color: var(--color-negro);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100wh;
+    height: auto;
+    min-height: 10vh;
+
+    padding: 15px;
+}
+/**Logo*/
+#logo-completo
+{
+    height: 10vh;
+    flex-shrink: 1;
+}
+/**Barra de busqueda*/
+barra-busqueda
+{
+    border-radius: 5px;
+    height: 100%;
+    flex-grow: 1;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+    margin: 15px;
+}
+
+/**Boton de busqueda en la barra de navegacion*/
+#boton-busqueda
+{
+    border: none;
+    background-color: var(--color-rojo);
+    max-width: 70px;
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    width: 140px;
+    cursor: pointer;
+
+    color: var(--color-blanco);
+}
+/**Caja de texto*/
+#input-busqueda
+{
+    background-color: var(--color-blanco);
+
+    border: var(--color-rojo) solid 2px;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+
+    padding: 15px 10px 15px 15px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/**boton de registro*/
+#boton-registrarse
+{
+    text-decoration: none;
+    color: var(--color-blanco);
+    
+    border-radius: 5px;
+    border: var(--color-blanco) solid 2px;
+    background-color: var(--color-azul);
+
+    cursor: pointer;
+    flex-shrink: 1;
+
+    margin: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-align: center;
+    transition: 0.2s;
+}
+
+#boton-registrarse:hover
+{
+    background-color: var(--color-rojo);
+}
+
+#boton-registrarse:active
+{
+    background-color: var(--color-gris);
+}
+
+/**Boton del carrito*/
+#boton-carrito
+{   
+    padding: 3px;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#boton-carrito:hover
+{
+    scale: 1.1;
+}
+
+/**Barra de Navegacion*/
+nav
+{
+    background-color: var(--color-negro);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/**Barra de navegacion*/
+#categorias-navegacion
+{
+    background-color: var(--color-rojo);
+    display: flex;
+
+}
+
+/**Vinculos*/
+.link-barra-navegacion
+{
+    color: var(--color-blanco);
+    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    text-decoration: none;
+    transition: 0.1s;
+}
+.link-barra-navegacion:hover
+{
+    background-color: var(--color-azul);
+}
+
+.link-barra-navegacion:active
+{
+    background-color: var(--color-gris-claro);
+}
+
+header{
+    box-shadow: 0 3px 5px rgb(0,0,0,144);
+    padding: 3px 0;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1 60px;
+}
+
+
+header nav div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+/** estiliza el texto para que no tenga decoración */
+colortxt{
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+
+/**  Estilo del contador del carrito */
+#contadorcarrito{
+    background-color: var(--color-rojo);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    aspect-ratio: 1;
+    line-height: 20px;
+    position: absolte;
+}
+
+h3, h2{
+    margin: 3px 0;
+}
+/**  Boton que tienen los artículos para añadir al carrito */
+#botonCarro{
+    background-color:var(--color-naranja);
+    color: var(--color-negro);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/** Indica un cambio relacionado con el estilo de arriba */
+#botonCarro:hover{
+    background-color: var(--color-gris);
+}
+
+/** Apartado que ayuda a ocultar información en determinados estrados */
+.escondido{
+    display: none;
+}

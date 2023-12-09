@@ -1,0 +1,28 @@
+/** Archivo de estilo complementario, solo se usa en la página principal*/
+
+
+
+
+.tarjeta-articulo {
+    margin-bottom: 20px !important; /* Ajusta según sea necesario */
+    height: auto !important;
+}
+
+.boton-anadir-carrito{
+    background-color: #70A7B6 !important; /* Fondo blanco */
+    border: 2px solid #ffffff !important; /* Borde sólido */
+    color: #ffffff !important; /* Color del texto */
+    width: 150px;
+    height: 40px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 17px !important;
+}
+
+
+.boton-anadir-carrito:hover{
+    transform: scale(1.1) !important; /* Escala el botón en hover */
+    background-color: #7d3d3b !important;
+    border: 3px solid #ffffff !important; /* Borde sólido */
+
+}
+
