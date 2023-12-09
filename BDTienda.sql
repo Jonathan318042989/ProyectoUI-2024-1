@@ -107,3 +107,12 @@ VALUES (1, "Jonathan", "Martínez", "Camarillo", "jonathanmartinezc0910@ciencias
 
 INSERT INTO Empleado(id_empleado, nombre, apellido_p, apellido_m, correo, telefono)
 VALUES (2, "Jose", "Ortiz", "Marin", "joseom@ciencias.unam.mx", "5555555555");
+
+INSERT INTO Producto(id_producto, fabricante, nombre_producto, categoria, descripcion, inventario, precio)
+VALUES (1, "MusicMerch", "Playera Taylor Swift", "Playeras", "Playera color blanco con estampado", 100, 150.00);
+
+INSERT INTO Producto(id_producto, fabricante, nombre_producto, categoria, descripcion, inventario, precio)
+VALUES (2, "MusicMerch", "Playera Cuarteto de nos", "Playeras", "Playera color negro con estampado", 100, 150.00);
+
+INSERT INTO Producto(id_producto, fabricante, nombre_producto, categoria, descripcion, inventario, precio)
+VALUES (3, "MusicMerch", "Playera Hatsune Miku", "Playeras", "Playera color azul con estampado", 100, 150.00);

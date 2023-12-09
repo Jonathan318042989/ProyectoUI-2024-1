@@ -72,8 +72,8 @@ if (
                         </div>
                         <br><br>
 
-                        <input type="submit" class="btn btn-primario" value="Agregar">
-                        <a href="index.php" class="btn btn-cancelar">Cancelar</a>
+                        <input type="submit" class="btn mi-boton-custom" value="Agregar">
+                        <a href="index.php" class="btn btn-danger">Cancelar</a>
                     </form>
                 </div>
             </div>

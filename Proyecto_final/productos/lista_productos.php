@@ -25,6 +25,8 @@ mysqli_close($conexion);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #010315;">
         <div class="container-fluid">
+
+        <button onclick="location.href='../principal_admin/index.html'" type="button" id="direccion"  class="btn btn-danger botonA">Regresar al Menu</a></button>
             <a class="navbar-brand m-0 p-0" href="#">
                 <img src="./images/logocompleto.png" alt="" width="150px">
             </a>

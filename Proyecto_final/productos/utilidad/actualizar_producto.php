@@ -19,10 +19,10 @@ $exito = mysqli_query($conexion, $query);
 
 if($exito)
 {
-    header("Location:lista_productos.php");
+    header("Location:../lista_productos.php");
 }
 else
 {
-    header("Location:lista_productos.php");
+    header("Location:../lista_productos.php");
 }
 ?>

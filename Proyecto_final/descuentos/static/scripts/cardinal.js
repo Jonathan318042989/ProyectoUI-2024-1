@@ -2,7 +2,6 @@
 
 /** Variable que almacena el contenedor de los artículos */
 const contenedorProductos = document.getElementById("contenedor-productos");
-
 /** Función que crea las tarjetas de presentación de los artículos existentes. (Archivo articulo.js) */
 function crearPresentacionArticulos(productos){
     productos.forEach(producto =>{
@@ -67,6 +66,14 @@ function descuentosApi(param){
     }
 }
 
+function editaTabla(productos){
+    const tablas = contenedorProductos.children;
+    for(var i = 0; i< tablas.length; i++){
+        var producto = tablas[i];
+
+    }
+}
+
 var guardable = 0;
 function descontar(param, productos){
     var i = 0;
@@ -77,8 +84,11 @@ function descontar(param, productos){
         guardable = guardable * param;
         console.log("Total a descontar: " + guardable);
         guardable = producto.precio - guardable;
+        producto.precioD = guardable
         setprecioDesc(guardable);
-        console.log("Precio con descuento del " + param + "%: " + precioD)
-    })    
+        console.log("Precio con descuento del " + param + "%: " + producto.precioD)
+    })
+    contenedorProductos.innerHTML = '';
+    crearPresentacionArticulos(productos);
 }
 
