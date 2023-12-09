@@ -77,7 +77,7 @@ if (
         <div class="form-group">
           <input name="telefono" type="text" class="form-control" value="<?php echo $telefono; ?>" placeholder="Actualiza el telefono">
         </div>
-        <button class="btn-success" name="update">Actualiza</button>
+        <button class="btn mi-boton-custom" name="update">Actualiza</button>
       </form>
       </div>
     </div>
