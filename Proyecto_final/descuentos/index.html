@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music & Merch</title>
-    <link rel="stylesheet" type="text/css" href="./static/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./static/style/styles.css">
     <link rel="stylesheet" href="./static/styles/bootstrap.css"/>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
+    <script src="./static/scripts/articulo.js"></script>
+    <script src="./static/scripts/cardinal.js" defer></script>
 
 </head>
 <body>
@@ -54,9 +56,18 @@
       </nav>
 
 <!---* INICIO DE LAS GRAFICAS-->
+<h6 class="title"> Descuentos </h6><br>
+<h6 class="titleDesc"> Aplicar Descuentos<br>
+    <button onclick="descuentosApi(10)" class="descuentos" id="10"> 10% </button>
+    <button onclick="descuentosApi(20)" class="descuentos" id="20"> 20% </button>
+    <button onclick="descuentosApi(30) "class="descuentos" id="30"> 30% </button>
+    <button onclick="descuentosApi(40)"class="descuentos" id="40"> 40% </button>
+    <button onclick="descuentosApi(50)" class="descuentos" id="50"> 50% </button>
+</estilizarDesc>
+</h6>
 
-
-
+ 
+<section id="contenedor-productos"></section>
      
 
 <!--* Footeer --> 
